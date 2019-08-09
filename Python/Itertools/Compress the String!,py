@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import groupby
+S = list(input())
+numdata = []
+elements = []
+for k,g in groupby(S):
+    elements.append(k)
+    numdata.append(len(list(g)))
+
+for i in range(len(elements)):
+    print((numdata[i],int(elements[i])),end = ' ')

@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s,k = input().split()
+k = int(k)
+from itertools import combinations
+s = sorted(list(s))
+counter1 = 1
+while counter1 <= k:
+    res = combinations(s,counter1)
+    for i in res:
+        counter2 = 0
+        ele = ''
+        while counter2 != counter1:
+            ele += i[counter2]
+            counter2 +=1
+        print(ele)
+    counter1 += 1
