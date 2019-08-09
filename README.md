@@ -1,1 +1,1 @@
-# HackRank
+# Solutions in HackerRank
