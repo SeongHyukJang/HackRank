@@ -6,7 +6,6 @@ import random
 import re
 import sys
 import datetime
-# Complete the time_delta function below.
 def time_delta(t1, t2):
     x1 = datetime.datetime.strptime(t1,"%a %d %b %Y %H:%M:%S %z")
     x2 = datetime.datetime.strptime(t2,"%a %d %b %Y %H:%M:%S %z")
